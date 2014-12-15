@@ -10,7 +10,7 @@ or dragging files in `AspectFiles/` into your project manually.
 Summary
 -------
 
-This aspect changes the logs of some foundation objects in ASL (Apple System Logger):
+This aspect changes the logs of some foundation objects in Xcode console:
 
  - Print string values using Unicode in colletion objects.
  - Correct the indentation of collection objects for multiple levels.
@@ -23,7 +23,7 @@ This aspect changes the logs of some foundation objects in ASL (Apple System Log
 Description
 -----------
 
-There is a problem if you want to log some NSFoundation objects in ASL (Apple System Logger). For example, if your dictionary containing Unicode strings:
+There is a problem if you log collection objects in Xcode console. For example, if your dictionary containing Unicode strings:
 
 ```objc
 NSDictionary *dict = @{@"如果你不愛我":@"我會讓你走",
@@ -40,12 +40,12 @@ the results in the Xcode console would be:
 }
 ```
 
-With this aspect patch, the string objects will be embraced by `""` and be printed correctly using Unicode:
+The output isn't encoded by Unicode. With this aspect patch, the string objects will be embraced by `""` and be printed using Unicode:
 
 ```
 {
-	"如果你真心愛我" : "我會讓你擁有全世界",
-	"如果你不愛我" : "我會讓你走"
+    "如果你真心愛我" : "我會讓你擁有全世界",
+    "如果你不愛我" : "我會讓你走"
 }
 ```
 
