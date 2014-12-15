@@ -1,13 +1,11 @@
 Unicodifying Descriptions Of NSFoundation Objects (Installable)
 =================================================
 
-This patch source is a submodule of [XAspectPatches][] using [XAspect][]. You can install this via CocoaPods.
+This source is an aspect patch using [XAspect][]. You can install this via CocoaPods.
 
-	pod 'XAspectPatches/Foundation_UnicodifyingDescriptionsOfObjects'
+	pod 'XAspect-Foundation_UnicodifyingDescriptionsOfObjects'
 
-or 
-
-	pod 'Foundation_UnicodifyingDescriptionsOfObjects', :git => 'https://github.com/xareelee/Foundation_UnicodifyingDescriptionsOfObjects'
+or dragging files in `AspectFiles/` into your project manually.
 
 Summary
 -------

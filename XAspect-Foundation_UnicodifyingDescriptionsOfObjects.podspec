@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = 'Foundation_UnicodifyingDescriptionsOfObjects'
+  s.name         = 'XAspect-Foundation_UnicodifyingDescriptionsOfObjects'
   s.version      = '1.0.0'
   s.license      = 'MIT'
   s.summary      = 'Unicodify descriptions of objects in Foundation framework'
