@@ -1,0 +1,22 @@
+PODS:
+  - Foundation_UnicodifyingDescriptionsOfObjects (1.0.0):
+    - XAspect
+  - XAspect (1.0.3):
+    - XAspect/Core (= 1.0.3)
+    - XAspect/Macros (= 1.0.3)
+  - XAspect/Core (1.0.3):
+    - XAspect/Macros
+  - XAspect/Macros (1.0.3)
+
+DEPENDENCIES:
+  - Foundation_UnicodifyingDescriptionsOfObjects (from `./../`)
+
+EXTERNAL SOURCES:
+  Foundation_UnicodifyingDescriptionsOfObjects:
+    :path: ./../
+
+SPEC CHECKSUMS:
+  Foundation_UnicodifyingDescriptionsOfObjects: 5382c14ca6f0300dbf36408256fa32a80bc995c9
+  XAspect: ac0f8b5725abcf5a343a272582ca74f3a9df8f89
+
+COCOAPODS: 0.35.0
