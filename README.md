@@ -10,9 +10,9 @@ or dragging files in `AspectFiles/` into your project manually.
 Summary
 -------
 
-This aspect change the descriptions of some foundation objects to print correctly in ASL (Apple System Logger):
+This aspect changes the logs of some foundation objects in ASL (Apple System Logger):
 
- - Print unicodified string values.
+ - Print string values using Unicode in colletion objects.
  - Correct the indentation of collection objects for multiple levels.
  - Customizable indentation. Default is a tab.
  - Elements in collection objects are more JSON-like. 
