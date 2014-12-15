@@ -7,7 +7,7 @@ This patch source is a submodule of [XAspectPatches][] using [XAspect][]. You ca
 
 or 
 
-	pod 'Foundation_UnicodifyingDescriptionsOfObjects', :git => https://github.com/xareelee/Foundation_UnicodifyingDescriptionsOfObjects
+	pod 'Foundation_UnicodifyingDescriptionsOfObjects', :git => 'https://github.com/xareelee/Foundation_UnicodifyingDescriptionsOfObjects'
 
 Summary
 -------
