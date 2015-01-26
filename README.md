@@ -26,8 +26,8 @@ Description
 There is a problem if you log collection objects in Xcode console. For example, if your dictionary containing Unicode strings:
 
 ```objc
-NSDictionary *dict = @{@"如果你不愛我":@"我會讓你走",
-					   @"如果你真心愛我":@"我會讓你擁有全世界"};
+NSDictionary *dict = @{@"你好":@"Hello",
+                       @"再見":@"Bye"};
 NSLog(@"dict: %@", dict);
 ```
 
@@ -35,8 +35,8 @@ the results in the Xcode console would be:
 
 ```
 {
-    "\U5982\U679c\U4f60\U4e0d\U611b\U6211" = "\U6211\U6703\U8b93\U4f60\U8d70";
-    "\U5982\U679c\U4f60\U771f\U5fc3\U611b\U6211" = "\U6211\U6703\U8b93\U4f60\U64c1\U6709\U5168\U4e16\U754c";
+    "\U4f60\U597d" = Hello;
+    "\U518d\U898b" = Bye;
 }
 ```
 
@@ -44,8 +44,8 @@ The output isn't encoded by Unicode. With this aspect patch, the string objects 
 
 ```
 {
-    "如果你真心愛我" : "我會讓你擁有全世界",
-    "如果你不愛我" : "我會讓你走"
+    "你好" : "Hello",
+    "再見" : "Bye"
 }
 ```
 
