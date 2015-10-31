@@ -11,21 +11,28 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '5.0'
   s.osx.deployment_target = '10.7'
-  s.default_subspecs = 'Core'
-
-  s.subspec 'Core' do |ss|
-    ss.source_files = 'AspectFiles/*.{h,m}'
-    ss.dependency 'XAspect'
-  end
+  s.default_subspecs = 'Core', 'Foundation'
 
   s.subspec 'All' do |ss|
     ss.dependency 'XAspect-Foundation_UnicodifyingDescriptionsOfObjects/Core'
+    ss.dependency 'XAspect-Foundation_UnicodifyingDescriptionsOfObjects/Foundation'
     ss.dependency 'XAspect-Foundation_UnicodifyingDescriptionsOfObjects/M13OrderedDictionary'
+  end
+
+  s.subspec 'Core' do |ss|
+    ss.source_files = 'AspectFiles/*.{h,m}'
+  end
+
+  s.subspec 'Foundation' do |ss|
+    ss.source_files = 'AspectFiles/Foundation/*.{h,m}'
+    ss.dependency 'XAspect-Foundation_UnicodifyingDescriptionsOfObjects/Core'
+    ss.dependency 'XAspect'
   end
 
   s.subspec 'M13OrderedDictionary' do |ss|
     ss.source_files = 'AspectFiles/M13OrderedDictionary/*.{h,m}'
     ss.dependency 'XAspect-Foundation_UnicodifyingDescriptionsOfObjects/Core'
+    ss.dependency 'XAspect'
     ss.dependency 'M13OrderedDictionary'
   end
 

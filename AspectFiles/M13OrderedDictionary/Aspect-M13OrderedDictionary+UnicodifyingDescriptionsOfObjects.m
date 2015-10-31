@@ -1,5 +1,5 @@
 // <XAspect>
-// Aspect-Foundation_UnicodifyingDescriptionsOfObjects.m
+// Aspect-M13OrderedDictionary+UnicodifyingDescriptionsOfObjects.m
 //
 // Copyright (c) 2015 Xaree Lee (Kang-Yu Lee)
 // Released under the MIT license (see below)
@@ -31,11 +31,14 @@
  */
 // -----------------------------------------------------------------------------
 
+#import "UnicodifyingDescriptionsOfObjects.h"
 #import <XAspect/XAspect.h>
 #import "M13OrderedDictionary.h"
 
-extern NSString *xl_JSON_object_description(id collection, id locale, NSUInteger level);
 
+// =============================================================================
+#pragma mark Category
+// =============================================================================
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wobjc-protocol-method-implementation"

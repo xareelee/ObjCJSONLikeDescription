@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D72E2EAE6C3231EB2CE59841'
+               BlueprintIdentifier = 'F01D48EFD23440B2977690F2'
                BlueprintName = 'XLTestLog'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libXLTestLog.a'>

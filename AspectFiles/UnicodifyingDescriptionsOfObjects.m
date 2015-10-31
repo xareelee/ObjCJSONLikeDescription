@@ -1,5 +1,5 @@
 // <XAspect>
-// Aspect-Foundation_UnicodifyingDescriptionsOfObjects.m
+// UnicodifyingDescriptionsOfObjects.m
 //
 // Copyright (c) 2015 Xaree Lee (Kang-Yu Lee)
 // Released under the MIT license (see below)
@@ -31,8 +31,7 @@
  */
 // -----------------------------------------------------------------------------
 
-#import <Foundation/Foundation.h>
-#import <XAspect/XAspect.h>
+#import "UnicodifyingDescriptionsOfObjects.h"
 
 
 // -----------------------------------------------------------------------------
@@ -53,7 +52,7 @@
 // -----------------------------------------------------------------------------
 
 // Make NSSet support description with a indent level.
-@interface NSSet (UnicodifyingDescriptionsOfObjects)
+@interface NSObject (UnicodifyingDescriptionsOfObjects)
 - (NSString *)xl_descriptionWithLocale:(id)locale indent:(NSUInteger)level;
 @end
 
@@ -159,6 +158,10 @@ NSString *xl_JSON_object_description(id collection, id locale, NSUInteger level)
 // =============================================================================
 
 
+@interface NSSet (UnicodifyingDescriptionsOfObjects)
+- (NSString *)xl_descriptionWithLocale:(id)locale indent:(NSUInteger)level;
+@end
+
 @implementation NSSet (UnicodifyingDescriptionsOfObjects)
 
 - (NSString *)xl_descriptionWithLocale:(id)locale indent:(NSUInteger)level
@@ -168,100 +171,3 @@ NSString *xl_JSON_object_description(id collection, id locale, NSUInteger level)
 
 @end
 
-
-/*
- Force `-debugDescription` to return the same value as `-description`.
- */
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wobjc-protocol-method-implementation"
-@implementation NSDictionary(DebugDescription)
-- (NSString *)debugDescription
-{
-  return [self description];
-}
-@end
-
-@implementation NSArray(DebugDescription)
-- (NSString *)debugDescription
-{
-  return [self description];
-}
-@end
-
-@implementation NSSet(DebugDescription)
-- (NSString *)debugDescription
-{
-  return [self description];
-}
-@end
-
-@implementation NSOrderedSet(DebugDescription)
-- (NSString *)debugDescription
-{
-  return [self description];
-}
-@end
-#pragma clang diagnostic pop
-
-
-// =============================================================================
-// Start aspect-oriented programming
-#define AtAspect Foundation_UnicodifyingDescriptionsOfObjects
-// =============================================================================
-
-#define AtAspectOfClass NSDictionary
-@classPatchField(NSDictionary)
-
-AspectPatch(-, NSString *, descriptionWithLocale:(id)locale indent:(NSUInteger)level)
-{
-  return xl_JSON_object_description(self, locale, level);
-}
-
-@end
-#undef AtAspectOfClass
-
-// -----------------------------------------------------------------------------
-
-#define AtAspectOfClass NSArray
-@classPatchField(NSArray)
-
-AspectPatch(-, NSString *, descriptionWithLocale:(id)locale indent:(NSUInteger)level)
-{
-  return xl_JSON_array_description(self, locale, level);
-}
-
-@end
-#undef AtAspectOfClass
-
-// -----------------------------------------------------------------------------
-
-#define AtAspectOfClass NSOrderedSet
-@classPatchField(NSOrderedSet)
-
-AspectPatch(-, NSString *, descriptionWithLocale:(id)locale indent:(NSUInteger)level)
-{
-  return xl_JSON_array_description(self, locale, level);
-}
-
-@end
-#undef AtAspectOfClass
-
-
-// -----------------------------------------------------------------------------
-
-#define AtAspectOfClass NSSet
-@classPatchField(NSSet)
-
-AspectPatch(-, NSString *, descriptionWithLocale:(id)locale)
-{
-  // Apple's NSSet didn't implement `-descriptionWithLocale:indent:`, why?
-  return [self xl_descriptionWithLocale:locale indent:0];
-}
-
-@end
-#undef AtAspectOfClass
-
-
-// -----------------------------------------------------------------------------
-
-#undef AtAspect

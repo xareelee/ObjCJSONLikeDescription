@@ -11,23 +11,24 @@
 		12A98F672C9C6924268A604882113195 /* M13OrderedDictionary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF59225B36E115700CC303F5A9336B7 /* M13OrderedDictionary-dummy.m */; };
 		142995967C18AA89B4E8DC5C6E599F92 /* XACExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 94DACA1109529AAC8A720EBC6FFCED55 /* XACExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		16A92BE88DE3F2629AAAC651F7BD1C06 /* XAspect-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A370187FB82A423515F701FAECD9E9B2 /* XAspect-dummy.m */; };
+		1A8D4AD95FB5D2363BC5DCD506BDB9CF /* XAspect-Foundation_UnicodifyingDescriptionsOfObjects-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C772E6798D22594EF22F7AEC84A3BD /* XAspect-Foundation_UnicodifyingDescriptionsOfObjects-dummy.m */; };
 		24B9501DC227E69E8DC83C28864E7A20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E351727CD07BB90B2A3CAE2C2433F6C5 /* Foundation.framework */; };
 		2F6BCC71CF43251B3F4D527677C51F02 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 279AA6492631DEFA8C439A9C088EEB8A /* XCTest.framework */; };
 		464DBCB159FC24961CB6C2DEC32616EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E351727CD07BB90B2A3CAE2C2433F6C5 /* Foundation.framework */; };
 		534A7A55161859490CE8F121D3BDD7F0 /* XLTestLogManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A864644AA2C6A3B00FB6ED5EEE523D0 /* XLTestLogManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		53896AA99B3217E187CD9D22680DA51E /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58914AF5EA1D2C11457E626DEE5A9E09 /* Pods-dummy.m */; };
+		55B448B5883ADBA3E1F2D23A722E119B /* UnicodifyingDescriptionsOfObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6F8A71F4CEB9054F6A0B894B805C44 /* UnicodifyingDescriptionsOfObjects.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		5E93DFA79955F854D48A63637E5F34DD /* Pods-Foundation_UnicodifyingDescriptionsOfObjectsDevTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9EE510543FC96B1D0E548BDE91EC168 /* Pods-Foundation_UnicodifyingDescriptionsOfObjectsDevTests-dummy.m */; };
 		60C94946E0A397EFA729ABF091EECA73 /* XACExtensions.c in Sources */ = {isa = PBXBuildFile; fileRef = 1C6615D431FEAE3DCC89D8D8BBC3760C /* XACExtensions.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		62973E4EA1A35EE97E62E38E306D4619 /* XAExtObjcMetamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A0C8F0E3034DCB684679EFE012A6DCB /* XAExtObjcMetamacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6B0E970FC74779E63A3C03E1EB416034 /* M13OrderedDictionary+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F75236A847526D4127BE0D335CFAA3A /* M13OrderedDictionary+Description.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		69B0E442976462ABE124348AE942EE33 /* UnicodifyingDescriptionsOfObjects.h in Headers */ = {isa = PBXBuildFile; fileRef = E359859BA224D91FBF9CBAC566D5579C /* UnicodifyingDescriptionsOfObjects.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		77985CDC2F2D9218AD028D9A4DC5DD1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E351727CD07BB90B2A3CAE2C2433F6C5 /* Foundation.framework */; };
 		81AD0B8D81AB3933D56C72BB63F4FF4A /* XAspect.h in Headers */ = {isa = PBXBuildFile; fileRef = 65C8009F8C289C22255B73207E556F47 /* XAspect.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89ECA51BCDBD8FEF644509AACEDD83E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E351727CD07BB90B2A3CAE2C2433F6C5 /* Foundation.framework */; };
 		8A7781BD3EC144F52A5723023A1D6955 /* XLTestLog-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27193E076FB74A75BE142C475A8C094E /* XLTestLog-dummy.m */; };
 		8E3BC968805378BD370608F875A59A3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E351727CD07BB90B2A3CAE2C2433F6C5 /* Foundation.framework */; };
-		977906E2F4C26E4A80189EC4C5864BC8 /* Aspect-Foundation_UnicodifyingDescriptionsOfObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 728FD8A18C93F3BA09118C228B4F9A76 /* Aspect-Foundation_UnicodifyingDescriptionsOfObjects.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		B4ECAF9344527C55474F1D65020003F8 /* XAspect-Foundation_UnicodifyingDescriptionsOfObjects-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D6431A42E16B27AD50502C43311128 /* XAspect-Foundation_UnicodifyingDescriptionsOfObjects-dummy.m */; };
 		B6524A3B1DC96B59CA3F3831510771E2 /* XACrystallization.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 708DE494815042B744083A7F4988DA8F /* XACrystallization.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B6F86FED9AC8B3F2C0AC9F4BF571150D /* Aspect-Foundation+UnicodifyingDescriptionsOfObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = CB58631AC55518AD0148236BC5E2B4E9 /* Aspect-Foundation+UnicodifyingDescriptionsOfObjects.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		BCBF9C5F078935425DF3AFE1B2A16A32 /* XLTestLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD3DAC260DEFF49AE8353E26BCAD3B7 /* XLTestLogManager.m */; };
 		BDE512B0D14EEF1866FC4EFA179AD3DF /* XAWeaveHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FD489D9BA7438672E1A38371B261B2B /* XAWeaveHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C1C03500CEF726E50E040A6E6EF4AB5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E351727CD07BB90B2A3CAE2C2433F6C5 /* Foundation.framework */; };
@@ -36,6 +37,7 @@
 		D0177D0FAF1BC2B6CA4E24836CFBCC2F /* XACrystallization.h in Headers */ = {isa = PBXBuildFile; fileRef = BA616C54DEF2569038FE4FE2C06E4D0A /* XACrystallization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DAC0AEF99DE5EB29ED0FB053A3EA10E6 /* XAWeaveHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5CA4F9478D5C54EDEC4C1D8DBB96248 /* XAWeaveHandler.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		DEC65B7D7678ABA0BB93DB9C267ECE96 /* M13OrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7229AF4D6C7107436CEE158A390E1A /* M13OrderedDictionary.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DEC666FF67250D994BA514A21A3C7EF3 /* Aspect-M13OrderedDictionary+UnicodifyingDescriptionsOfObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = E55079325DABBF0DC05D9C1E5BFAB4D7 /* Aspect-M13OrderedDictionary+UnicodifyingDescriptionsOfObjects.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		F72C515779424BAB8F5A648639108724 /* XAObjcMetaprogramming.h in Headers */ = {isa = PBXBuildFile; fileRef = BC1366DD7A26827B79C53742C69A1C3E /* XAObjcMetaprogramming.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -106,6 +108,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06C772E6798D22594EF22F7AEC84A3BD /* XAspect-Foundation_UnicodifyingDescriptionsOfObjects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XAspect-Foundation_UnicodifyingDescriptionsOfObjects-dummy.m"; sourceTree = "<group>"; };
 		0865DC5889A8D814E413A2D1F831882B /* libPods-Foundation_UnicodifyingDescriptionsOfObjectsDevTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Foundation_UnicodifyingDescriptionsOfObjectsDevTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A864644AA2C6A3B00FB6ED5EEE523D0 /* XLTestLogManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLTestLogManager.h; path = XLTestLog/XLTestLogManager.h; sourceTree = "<group>"; };
 		0C78B917E7A9D5DD3B0DC9BBB09286DD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,24 +123,22 @@
 		331B6B80D651EC34EF855E6AA8D171B1 /* Pods-Foundation_UnicodifyingDescriptionsOfObjectsDevTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Foundation_UnicodifyingDescriptionsOfObjectsDevTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		394DC2170E6FD96B1ABB02B3E0D93F9B /* libXLTestLog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libXLTestLog.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AFF540811F89BABC7888B0E4B12E959 /* XAFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XAFoundation.h; path = XAspect/Macros/XAFoundation.h; sourceTree = "<group>"; };
-		3B1DFB8718C036882395F0D5AEF5F823 /* XAspect-Foundation_UnicodifyingDescriptionsOfObjects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XAspect-Foundation_UnicodifyingDescriptionsOfObjects-prefix.pch"; sourceTree = "<group>"; };
 		3DD3DAC260DEFF49AE8353E26BCAD3B7 /* XLTestLogManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLTestLogManager.m; path = XLTestLog/XLTestLogManager.m; sourceTree = "<group>"; };
 		3EC7C2A11E9835943A0DDF1984B42EA1 /* XAspect-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XAspect-prefix.pch"; sourceTree = "<group>"; };
 		58914AF5EA1D2C11457E626DEE5A9E09 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
 		596213DA1EFDABBF24E374FE618B7336 /* libXAspect-Foundation_UnicodifyingDescriptionsOfObjects.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libXAspect-Foundation_UnicodifyingDescriptionsOfObjects.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B75021292C0B62088FDF2F87CC825A2 /* Pods-Foundation_UnicodifyingDescriptionsOfObjectsDevTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Foundation_UnicodifyingDescriptionsOfObjectsDevTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		64F8A2ACF32F6DBBCC3F06F3DA608C19 /* XAspect-Foundation_UnicodifyingDescriptionsOfObjects.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "XAspect-Foundation_UnicodifyingDescriptionsOfObjects.xcconfig"; sourceTree = "<group>"; };
 		65C8009F8C289C22255B73207E556F47 /* XAspect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XAspect.h; path = XAspect/XAspect.h; sourceTree = "<group>"; };
 		6A0C8F0E3034DCB684679EFE012A6DCB /* XAExtObjcMetamacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XAExtObjcMetamacros.h; path = XAspect/Macros/XAExtObjcMetamacros.h; sourceTree = "<group>"; };
 		6D7229AF4D6C7107436CEE158A390E1A /* M13OrderedDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = M13OrderedDictionary.m; sourceTree = "<group>"; };
 		708DE494815042B744083A7F4988DA8F /* XACrystallization.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = XACrystallization.cpp; path = XAspect/Core/XACrystallization.cpp; sourceTree = "<group>"; };
 		717DAC60FF9C6C917034EA8271B5882E /* Pods-Foundation_UnicodifyingDescriptionsOfObjectsDevTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Foundation_UnicodifyingDescriptionsOfObjectsDevTests-frameworks.sh"; sourceTree = "<group>"; };
-		728FD8A18C93F3BA09118C228B4F9A76 /* Aspect-Foundation_UnicodifyingDescriptionsOfObjects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Aspect-Foundation_UnicodifyingDescriptionsOfObjects.m"; sourceTree = "<group>"; };
 		77CACAFBCAE58277A637D242BC5DCD4F /* XLTestLog.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XLTestLog.xcconfig; sourceTree = "<group>"; };
 		7FD489D9BA7438672E1A38371B261B2B /* XAWeaveHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XAWeaveHandler.h; path = XAspect/Core/XAWeaveHandler.h; sourceTree = "<group>"; };
+		8AA09627128005937FE3648397A89C67 /* XAspect-Foundation_UnicodifyingDescriptionsOfObjects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XAspect-Foundation_UnicodifyingDescriptionsOfObjects-prefix.pch"; sourceTree = "<group>"; };
 		91F6F877AE039CFCB88E49BCEA506A89 /* XADebugMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XADebugMacros.h; path = XAspect/Macros/XADebugMacros.h; sourceTree = "<group>"; };
 		94DACA1109529AAC8A720EBC6FFCED55 /* XACExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XACExtensions.h; path = XAspect/Core/XACExtensions.h; sourceTree = "<group>"; };
-		9F75236A847526D4127BE0D335CFAA3A /* M13OrderedDictionary+Description.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "M13OrderedDictionary+Description.m"; sourceTree = "<group>"; };
+		954993035613F682986AA29517DFFD24 /* XAspect-Foundation_UnicodifyingDescriptionsOfObjects.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "XAspect-Foundation_UnicodifyingDescriptionsOfObjects.xcconfig"; sourceTree = "<group>"; };
 		9FEF94CB14C44B6F40D63D94D15797C3 /* Pods-Foundation_UnicodifyingDescriptionsOfObjectsDevTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Foundation_UnicodifyingDescriptionsOfObjectsDevTests-resources.sh"; sourceTree = "<group>"; };
 		A370187FB82A423515F701FAECD9E9B2 /* XAspect-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XAspect-dummy.m"; sourceTree = "<group>"; };
 		AC68035B8F70C12CF7F474A12E30D1CD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
@@ -147,17 +148,20 @@
 		BDEBB143A876882CBC68675FE0BD8712 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
 		BFEBE3F69CA3D78D390EB64426A03159 /* M13OrderedDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = M13OrderedDictionary.h; sourceTree = "<group>"; };
 		CA9F6CBEE408ED90B1916A8A6C6F6DF8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		CB58631AC55518AD0148236BC5E2B4E9 /* Aspect-Foundation+UnicodifyingDescriptionsOfObjects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Aspect-Foundation+UnicodifyingDescriptionsOfObjects.m"; sourceTree = "<group>"; };
 		D009A075DF711C753CC0C505F1D09296 /* M13OrderedDictionary.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = M13OrderedDictionary.xcconfig; sourceTree = "<group>"; };
-		D2D6431A42E16B27AD50502C43311128 /* XAspect-Foundation_UnicodifyingDescriptionsOfObjects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XAspect-Foundation_UnicodifyingDescriptionsOfObjects-dummy.m"; sourceTree = "<group>"; };
 		DA44909617078512F3E7CA2FFCE6DB19 /* libM13OrderedDictionary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libM13OrderedDictionary.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E027017B39A513C175899F0FCCBF9501 /* XLTestLog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XLTestLog-prefix.pch"; sourceTree = "<group>"; };
 		E351727CD07BB90B2A3CAE2C2433F6C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E359859BA224D91FBF9CBAC566D5579C /* UnicodifyingDescriptionsOfObjects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UnicodifyingDescriptionsOfObjects.h; sourceTree = "<group>"; };
 		E3D4A5458D9373649871C81123DF4368 /* XAspect.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XAspect.xcconfig; sourceTree = "<group>"; };
+		E55079325DABBF0DC05D9C1E5BFAB4D7 /* Aspect-M13OrderedDictionary+UnicodifyingDescriptionsOfObjects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Aspect-M13OrderedDictionary+UnicodifyingDescriptionsOfObjects.m"; sourceTree = "<group>"; };
 		F08CD9B02E335F82C3F084A784FCD075 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F0D69F7380A7D5BD018AD4094FD6D232 /* Pods-Foundation_UnicodifyingDescriptionsOfObjectsDevTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Foundation_UnicodifyingDescriptionsOfObjectsDevTests.release.xcconfig"; sourceTree = "<group>"; };
 		F5BF5A2D7C67B913FC61F948AAFFA416 /* Pods-Foundation_UnicodifyingDescriptionsOfObjectsDevTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Foundation_UnicodifyingDescriptionsOfObjectsDevTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F5CA4F9478D5C54EDEC4C1D8DBB96248 /* XAWeaveHandler.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = XAWeaveHandler.cpp; path = XAspect/Core/XAWeaveHandler.cpp; sourceTree = "<group>"; };
 		F9EE510543FC96B1D0E548BDE91EC168 /* Pods-Foundation_UnicodifyingDescriptionsOfObjectsDevTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Foundation_UnicodifyingDescriptionsOfObjectsDevTests-dummy.m"; sourceTree = "<group>"; };
+		FE6F8A71F4CEB9054F6A0B894B805C44 /* UnicodifyingDescriptionsOfObjects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UnicodifyingDescriptionsOfObjects.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,14 +217,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07D548AD0213827C1D2340CD63AA0366 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				EBA60D853F9ED14B9675DC479BC888CF /* XAspect-Foundation_UnicodifyingDescriptionsOfObjects */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		0C6B012983F9FEF8CC65C1318F5F090C /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,14 +248,6 @@
 			path = XAspect;
 			sourceTree = "<group>";
 		};
-		128A01F3FBD67B4459ECE6AA16455288 /* AspectFiles */ = {
-			isa = PBXGroup;
-			children = (
-				51BD712B3E6E2CADE5D8C12480A062ED /* M13OrderedDictionary */,
-			);
-			path = AspectFiles;
-			sourceTree = "<group>";
-		};
 		26E82F9FE8AF3DF9BA22F1C98945863E /* Pods-Foundation_UnicodifyingDescriptionsOfObjectsDevTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +261,22 @@
 			);
 			name = "Pods-Foundation_UnicodifyingDescriptionsOfObjectsDevTests";
 			path = "Target Support Files/Pods-Foundation_UnicodifyingDescriptionsOfObjectsDevTests";
+			sourceTree = "<group>";
+		};
+		29F9874642E48FD51D4398BCD90C2E7E /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				9F6F3846D7B554FD762C7D503E1BCFC3 /* AspectFiles */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
+		2A0AF02B7591043AF5158FC15E3C79DA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B2418A4DC58FB26A506869444D31E5B6 /* AspectFiles */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 		35E3387CA14F9263D1418DC15CF198C5 /* Pods */ = {
@@ -290,6 +294,18 @@
 			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
+		413DE12E58DDFBD896F91E6314DB8C04 /* XAspect-Foundation_UnicodifyingDescriptionsOfObjects */ = {
+			isa = PBXGroup;
+			children = (
+				2A0AF02B7591043AF5158FC15E3C79DA /* Core */,
+				29F9874642E48FD51D4398BCD90C2E7E /* Foundation */,
+				853E9168DDCB04595644E13C5DEB92B0 /* M13OrderedDictionary */,
+				700EE565A29D0EACF23411230E7FDD44 /* Support Files */,
+			);
+			name = "XAspect-Foundation_UnicodifyingDescriptionsOfObjects";
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,12 +314,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		51BD712B3E6E2CADE5D8C12480A062ED /* M13OrderedDictionary */ = {
+		4EA1A0AB7190AF92D621A16C382D38B7 /* M13OrderedDictionary */ = {
 			isa = PBXGroup;
 			children = (
-				9F75236A847526D4127BE0D335CFAA3A /* M13OrderedDictionary+Description.m */,
+				E55079325DABBF0DC05D9C1E5BFAB4D7 /* Aspect-M13OrderedDictionary+UnicodifyingDescriptionsOfObjects.m */,
 			);
 			path = M13OrderedDictionary;
+			sourceTree = "<group>";
+		};
+		511F2F0CD8713562567D14A9A869749C /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				CB58631AC55518AD0148236BC5E2B4E9 /* Aspect-Foundation+UnicodifyingDescriptionsOfObjects.m */,
+			);
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 		51C258C9FA81D163D4F7308453E565EF /* Support Files */ = {
@@ -317,24 +341,43 @@
 			path = "../Target Support Files/XAspect";
 			sourceTree = "<group>";
 		};
-		5C0EACAFFDC96D47F05E2CD59053AE9F /* M13OrderedDictionary */ = {
+		5A89BE9B539E243F0141836084820715 /* AspectFiles */ = {
 			isa = PBXGroup;
 			children = (
-				128A01F3FBD67B4459ECE6AA16455288 /* AspectFiles */,
+				4EA1A0AB7190AF92D621A16C382D38B7 /* M13OrderedDictionary */,
 			);
-			name = M13OrderedDictionary;
+			path = AspectFiles;
+			sourceTree = "<group>";
+		};
+		700EE565A29D0EACF23411230E7FDD44 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				954993035613F682986AA29517DFFD24 /* XAspect-Foundation_UnicodifyingDescriptionsOfObjects.xcconfig */,
+				06C772E6798D22594EF22F7AEC84A3BD /* XAspect-Foundation_UnicodifyingDescriptionsOfObjects-dummy.m */,
+				8AA09627128005937FE3648397A89C67 /* XAspect-Foundation_UnicodifyingDescriptionsOfObjects-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Foundation_UnicodifyingDescriptionsOfObjectsDev/Pods/Target Support Files/XAspect-Foundation_UnicodifyingDescriptionsOfObjects";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				07D548AD0213827C1D2340CD63AA0366 /* Development Pods */,
+				DCD049BCD2821E2C95EB29FACCA1CD63 /* Development Pods */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				CD8541C60ACCC73514073BC63B374B88 /* Pods */,
 				8988EBEAF3DAF5F2DF9780F9BAFF2A60 /* Products */,
 				86B0351DFDA2180DC3B4F46607DFE007 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		853E9168DDCB04595644E13C5DEB92B0 /* M13OrderedDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				5A89BE9B539E243F0141836084820715 /* AspectFiles */,
+			);
+			name = M13OrderedDictionary;
 			sourceTree = "<group>";
 		};
 		86B0351DFDA2180DC3B4F46607DFE007 /* Targets Support Files */ = {
@@ -369,14 +412,6 @@
 			path = XLTestLog;
 			sourceTree = "<group>";
 		};
-		9BD40FCCD7A493AA9B6CD292714E6CF9 /* AspectFiles */ = {
-			isa = PBXGroup;
-			children = (
-				728FD8A18C93F3BA09118C228B4F9A76 /* Aspect-Foundation_UnicodifyingDescriptionsOfObjects.m */,
-			);
-			path = AspectFiles;
-			sourceTree = "<group>";
-		};
 		9F320FDC7BD1B30922E7647305C944F7 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -388,6 +423,23 @@
 				7FD489D9BA7438672E1A38371B261B2B /* XAWeaveHandler.h */,
 			);
 			name = Core;
+			sourceTree = "<group>";
+		};
+		9F6F3846D7B554FD762C7D503E1BCFC3 /* AspectFiles */ = {
+			isa = PBXGroup;
+			children = (
+				511F2F0CD8713562567D14A9A869749C /* Foundation */,
+			);
+			path = AspectFiles;
+			sourceTree = "<group>";
+		};
+		B2418A4DC58FB26A506869444D31E5B6 /* AspectFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E359859BA224D91FBF9CBAC566D5579C /* UnicodifyingDescriptionsOfObjects.h */,
+				FE6F8A71F4CEB9054F6A0B894B805C44 /* UnicodifyingDescriptionsOfObjects.m */,
+			);
+			path = AspectFiles;
 			sourceTree = "<group>";
 		};
 		B8A6C6ABB5E652FE25776BC792BF648F /* Macros */ = {
@@ -411,23 +463,12 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		D959FCC579AB2EF57A7F6FFEADD61B4F /* Core */ = {
+		DCD049BCD2821E2C95EB29FACCA1CD63 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9BD40FCCD7A493AA9B6CD292714E6CF9 /* AspectFiles */,
+				413DE12E58DDFBD896F91E6314DB8C04 /* XAspect-Foundation_UnicodifyingDescriptionsOfObjects */,
 			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		E7655C6BC9A0AC27125EC0F5EFC8E8BA /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				64F8A2ACF32F6DBBCC3F06F3DA608C19 /* XAspect-Foundation_UnicodifyingDescriptionsOfObjects.xcconfig */,
-				D2D6431A42E16B27AD50502C43311128 /* XAspect-Foundation_UnicodifyingDescriptionsOfObjects-dummy.m */,
-				3B1DFB8718C036882395F0D5AEF5F823 /* XAspect-Foundation_UnicodifyingDescriptionsOfObjects-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "Foundation_UnicodifyingDescriptionsOfObjectsDev/Pods/Target Support Files/XAspect-Foundation_UnicodifyingDescriptionsOfObjects";
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		EA5D3F6E3E61BE5FBB518CE6FB6AAFA5 /* Support Files */ = {
@@ -439,17 +480,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/XLTestLog";
-			sourceTree = "<group>";
-		};
-		EBA60D853F9ED14B9675DC479BC888CF /* XAspect-Foundation_UnicodifyingDescriptionsOfObjects */ = {
-			isa = PBXGroup;
-			children = (
-				D959FCC579AB2EF57A7F6FFEADD61B4F /* Core */,
-				5C0EACAFFDC96D47F05E2CD59053AE9F /* M13OrderedDictionary */,
-				E7655C6BC9A0AC27125EC0F5EFC8E8BA /* Support Files */,
-			);
-			name = "XAspect-Foundation_UnicodifyingDescriptionsOfObjects";
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		EBD52484420C64A21A51C05232C9A8BA /* M13OrderedDictionary */ = {
@@ -493,6 +523,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				534A7A55161859490CE8F121D3BDD7F0 /* XLTestLogManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F623BA175A2D1474DE31CFCCB4E3A349 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69B0E442976462ABE124348AE942EE33 /* UnicodifyingDescriptionsOfObjects.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,8 +612,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 645B85A6D49F76196AD3D4BAA4339318 /* Build configuration list for PBXNativeTarget "XAspect-Foundation_UnicodifyingDescriptionsOfObjects" */;
 			buildPhases = (
-				F543FBE196A2F475F8CDD90B289B2CC9 /* Sources */,
+				D53CFA008C7B67F41CD064C590568410 /* Sources */,
 				5EBE1DF732D547E47F9C9D1F79BBB62E /* Frameworks */,
+				F623BA175A2D1474DE31CFCCB4E3A349 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -676,13 +715,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F543FBE196A2F475F8CDD90B289B2CC9 /* Sources */ = {
+		D53CFA008C7B67F41CD064C590568410 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				977906E2F4C26E4A80189EC4C5864BC8 /* Aspect-Foundation_UnicodifyingDescriptionsOfObjects.m in Sources */,
-				6B0E970FC74779E63A3C03E1EB416034 /* M13OrderedDictionary+Description.m in Sources */,
-				B4ECAF9344527C55474F1D65020003F8 /* XAspect-Foundation_UnicodifyingDescriptionsOfObjects-dummy.m in Sources */,
+				B6F86FED9AC8B3F2C0AC9F4BF571150D /* Aspect-Foundation+UnicodifyingDescriptionsOfObjects.m in Sources */,
+				DEC666FF67250D994BA514A21A3C7EF3 /* Aspect-M13OrderedDictionary+UnicodifyingDescriptionsOfObjects.m in Sources */,
+				55B448B5883ADBA3E1F2D23A722E119B /* UnicodifyingDescriptionsOfObjects.m in Sources */,
+				1A8D4AD95FB5D2363BC5DCD506BDB9CF /* XAspect-Foundation_UnicodifyingDescriptionsOfObjects-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -827,7 +867,7 @@
 		};
 		3C43F5412EDCA7642EAB8681899DE865 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64F8A2ACF32F6DBBCC3F06F3DA608C19 /* XAspect-Foundation_UnicodifyingDescriptionsOfObjects.xcconfig */;
+			baseConfigurationReference = 954993035613F682986AA29517DFFD24 /* XAspect-Foundation_UnicodifyingDescriptionsOfObjects.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/XAspect-Foundation_UnicodifyingDescriptionsOfObjects/XAspect-Foundation_UnicodifyingDescriptionsOfObjects-prefix.pch";
@@ -1006,7 +1046,7 @@
 		};
 		DB16F4B678583F07ED29DD695D7288CC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64F8A2ACF32F6DBBCC3F06F3DA608C19 /* XAspect-Foundation_UnicodifyingDescriptionsOfObjects.xcconfig */;
+			baseConfigurationReference = 954993035613F682986AA29517DFFD24 /* XAspect-Foundation_UnicodifyingDescriptionsOfObjects.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/XAspect-Foundation_UnicodifyingDescriptionsOfObjects/XAspect-Foundation_UnicodifyingDescriptionsOfObjects-prefix.pch";

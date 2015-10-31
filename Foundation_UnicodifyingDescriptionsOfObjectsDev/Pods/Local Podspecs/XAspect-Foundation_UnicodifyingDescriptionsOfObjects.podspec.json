@@ -17,24 +17,37 @@
     "ios": "5.0",
     "osx": "10.7"
   },
-  "default_subspecs": "Core",
+  "default_subspecs": [
+    "Core",
+    "Foundation"
+  ],
   "subspecs": [
-    {
-      "name": "Core",
-      "source_files": "AspectFiles/*.{h,m}",
-      "dependencies": {
-        "XAspect": [
-
-        ]
-      }
-    },
     {
       "name": "All",
       "dependencies": {
         "XAspect-Foundation_UnicodifyingDescriptionsOfObjects/Core": [
 
         ],
+        "XAspect-Foundation_UnicodifyingDescriptionsOfObjects/Foundation": [
+
+        ],
         "XAspect-Foundation_UnicodifyingDescriptionsOfObjects/M13OrderedDictionary": [
+
+        ]
+      }
+    },
+    {
+      "name": "Core",
+      "source_files": "AspectFiles/*.{h,m}"
+    },
+    {
+      "name": "Foundation",
+      "source_files": "AspectFiles/Foundation/*.{h,m}",
+      "dependencies": {
+        "XAspect-Foundation_UnicodifyingDescriptionsOfObjects/Core": [
+
+        ],
+        "XAspect": [
 
         ]
       }
@@ -44,6 +57,9 @@
       "source_files": "AspectFiles/M13OrderedDictionary/*.{h,m}",
       "dependencies": {
         "XAspect-Foundation_UnicodifyingDescriptionsOfObjects/Core": [
+
+        ],
+        "XAspect": [
 
         ],
         "M13OrderedDictionary": [
