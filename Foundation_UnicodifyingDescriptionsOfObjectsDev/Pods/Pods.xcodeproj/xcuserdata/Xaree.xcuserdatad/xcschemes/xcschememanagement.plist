@@ -4,17 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-Foundation_UnicodifyingDescriptionsOfObjects.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-Foundation_UnicodifyingDescriptionsOfObjectsDevTests-Foundation_UnicodifyingDescriptionsOfObjects.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-Foundation_UnicodifyingDescriptionsOfObjectsDevTests-XAspect.xcscheme</key>
+		<key>M13OrderedDictionary.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -24,12 +14,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-XAspect.xcscheme</key>
+		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods.xcscheme</key>
+		<key>XAspect-Foundation_UnicodifyingDescriptionsOfObjects.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>XAspect.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>XLTestLog.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,32 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4535F4F3F09309B74D3F47A3</key>
+		<key>1F20FEF163999874E373B319D586D7A7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>56B3C9C798437DFC44F55504</key>
+		<key>83D513296020E5A8AFEF6AB00B9C92AE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5CAB21C79F6C7EEA98A2434A</key>
+		<key>85DE9929367916B2BB4ED816F5C42070</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5D0A830235BE0A6694A7A877</key>
+		<key>C1DC3D289C42838A51731A682A4D5D44</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D6E1A5D0F253607AF654A79F</key>
+		<key>D4BFCBB0DFB697E676F65B4F753199E3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D78DAAF76BA5474BED19781E</key>
+		<key>EEA09650339DA38DCC69216D2318C8FD</key>
 		<dict>
 			<key>primary</key>
 			<true/>

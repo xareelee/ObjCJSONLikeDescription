@@ -1,8 +1,5 @@
-CLANG_CXX_LANGUAGE_STANDARD = c++11
-CLANG_CXX_LIBRARY = libc++
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Foundation_UnicodifyingDescriptionsOfObjects" "${PODS_ROOT}/Headers/Public/XAspect"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Foundation_UnicodifyingDescriptionsOfObjects" -isystem "${PODS_ROOT}/Headers/Public/XAspect"
-OTHER_LDFLAGS = -ObjC -l"Pods-Foundation_UnicodifyingDescriptionsOfObjects" -l"Pods-XAspect" -l"c++"
-OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/M13OrderedDictionary" "${PODS_ROOT}/Headers/Public/XAspect" "${PODS_ROOT}/Headers/Public/XAspect-Foundation_UnicodifyingDescriptionsOfObjects" "${PODS_ROOT}/Headers/Public/XLTestLog"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/M13OrderedDictionary" -isystem "${PODS_ROOT}/Headers/Public/XAspect" -isystem "${PODS_ROOT}/Headers/Public/XAspect-Foundation_UnicodifyingDescriptionsOfObjects" -isystem "${PODS_ROOT}/Headers/Public/XLTestLog"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"M13OrderedDictionary" -l"XAspect" -l"XAspect-Foundation_UnicodifyingDescriptionsOfObjects" -l"c++" -framework "Foundation"
 PODS_ROOT = ${SRCROOT}/Pods

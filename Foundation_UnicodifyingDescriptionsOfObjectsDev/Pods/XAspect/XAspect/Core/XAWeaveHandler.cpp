@@ -1,7 +1,7 @@
 // <XAspect>
 // XAWeaveHandler.cpp
 //
-// Copyright (c) 2014 Xaree Lee (Kang-Yu Lee)
+// Copyright (c) 2015 Xaree Lee (Kang-Yu Lee)
 // Released under the MIT license (see below)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -38,13 +38,13 @@ NSUInteger XAspectWarningCounts;
 
 // An API for calling C++ method to parse the patches.
 void _XAspect_build_patches(Class aspectMethodSourceClass, Class targetClass, const char *aspectName) {
-	XAsepct::CrystallizationManager::sharedInstance()->constructPatchBuild(aspectMethodSourceClass, targetClass, aspectName);
+  XAsepct::CrystallizationManager::sharedInstance()->constructPatchBuild(aspectMethodSourceClass, targetClass, aspectName);
 }
 
 // A contructor. Automatically be invoked after program is loaded.
 __attribute__((constructor))
 static void crystallizeAllPatches(void) {
-	XAsepct::CrystallizationManager::sharedInstance()->crystallizeAllPatches();
+  XAsepct::CrystallizationManager::sharedInstance()->crystallizeAllPatches();
 }
 
 

@@ -16,23 +16,7 @@
 
 @implementation Foundation_UnicodifyingDescriptionsOfObjectsDevTests
 
-- (void)setUp {
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-}
-
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
-}
-
-- (void)testWarnings
-{
-	XCTAssertEqual(XAspectWarningCounts, 4,
-				   @"The count should be equal to the number of aspect patches in Aspect-Foundation_UnicodifyingDescriptionsOfObjects.m due to shared implementation.");
-}
-
-- (void)testDuplicatedAspectPatches {
+- (void)testDescription {
 	// This is an example of a functional test case.
 	NSArray *array = @[@"如果你不愛我",
 					   @"我會讓你走",

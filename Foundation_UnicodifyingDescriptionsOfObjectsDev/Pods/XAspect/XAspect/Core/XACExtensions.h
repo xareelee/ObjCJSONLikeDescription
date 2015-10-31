@@ -1,7 +1,7 @@
 // <XAspect>
 // XACExtensions.h
 //
-// Copyright (c) 2014 Xaree Lee (Kang-Yu Lee)
+// Copyright (c) 2015 Xaree Lee (Kang-Yu Lee)
 // Released under the MIT license (see below)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -34,16 +34,16 @@
 
 
 typedef NS_ENUM(NSInteger, XAOriginImpType) {
-	XAOriginImpTypeUndetermined,
-	XAOriginImpTypeNotExists,
-	XAOriginImpTypeExists,
-	XAOriginImpTypeExistsInSuperclass,
+  XAOriginImpTypeUndetermined,
+  XAOriginImpTypeNotExists,
+  XAOriginImpTypeExists,
+  XAOriginImpTypeExistsInSuperclass,
 };
 
 // -----------------------------------------------------------------------------
 #pragma mark - C String
 // -----------------------------------------------------------------------------
-/* 
+/*
  The prefix 'xace' stands for XAspect C Extensions.
  */
 
@@ -57,7 +57,7 @@ OBJC_EXTERN BOOL xace_isSuffixedCString(const char *str, const char *suffix);
 /// @warning You should free the string after using.
 OBJC_EXTERN const char *xace_createSubstring(const char* input, size_t offset, size_t len);
 
-/// Return a string which removes the prefix  
+/// Return a string which removes the prefix
 OBJC_EXTERN const char *xace_prefixRemovedString(const char *str, const char *prefix);
 
 /// @warning You should free the string after using.

@@ -1,8 +1,8 @@
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '6.0'
 
-pod 'Foundation_UnicodifyingDescriptionsOfObjects', :path => './../'
+pod 'XAspect-Foundation_UnicodifyingDescriptionsOfObjects/All', :path => './../'
 
 target :Foundation_UnicodifyingDescriptionsOfObjectsDevTests do
- pod 'Foundation_UnicodifyingDescriptionsOfObjects', :path => './../'
+  pod 'XLTestLog', '~> 1.0'
 end

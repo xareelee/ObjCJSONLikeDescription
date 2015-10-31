@@ -1,22 +1,33 @@
 PODS:
-  - Foundation_UnicodifyingDescriptionsOfObjects (1.0.0):
+  - M13OrderedDictionary (1.1.0)
+  - XAspect (1.0.5):
+    - XAspect/Core (= 1.0.5)
+    - XAspect/Macros (= 1.0.5)
+  - XAspect-Foundation_UnicodifyingDescriptionsOfObjects/All (1.1.0):
+    - XAspect-Foundation_UnicodifyingDescriptionsOfObjects/Core
+    - XAspect-Foundation_UnicodifyingDescriptionsOfObjects/M13OrderedDictionary
+  - XAspect-Foundation_UnicodifyingDescriptionsOfObjects/Core (1.1.0):
     - XAspect
-  - XAspect (1.0.3):
-    - XAspect/Core (= 1.0.3)
-    - XAspect/Macros (= 1.0.3)
-  - XAspect/Core (1.0.3):
+  - XAspect-Foundation_UnicodifyingDescriptionsOfObjects/M13OrderedDictionary (1.1.0):
+    - M13OrderedDictionary
+    - XAspect-Foundation_UnicodifyingDescriptionsOfObjects/Core
+  - XAspect/Core (1.0.5):
     - XAspect/Macros
-  - XAspect/Macros (1.0.3)
+  - XAspect/Macros (1.0.5)
+  - XLTestLog (1.0.1)
 
 DEPENDENCIES:
-  - Foundation_UnicodifyingDescriptionsOfObjects (from `./../`)
+  - XAspect-Foundation_UnicodifyingDescriptionsOfObjects/All (from `./../`)
+  - XLTestLog (~> 1.0)
 
 EXTERNAL SOURCES:
-  Foundation_UnicodifyingDescriptionsOfObjects:
-    :path: ./../
+  XAspect-Foundation_UnicodifyingDescriptionsOfObjects:
+    :path: "./../"
 
 SPEC CHECKSUMS:
-  Foundation_UnicodifyingDescriptionsOfObjects: 5382c14ca6f0300dbf36408256fa32a80bc995c9
-  XAspect: ac0f8b5725abcf5a343a272582ca74f3a9df8f89
+  M13OrderedDictionary: 6e157fe9c82aa6b3cd7198f5c5c30c7a6834c4a6
+  XAspect: db50bf487f92dbb8557a7a5365556966c8493af8
+  XAspect-Foundation_UnicodifyingDescriptionsOfObjects: 9026a2b07a445f652684fa5dac5fb41bca782362
+  XLTestLog: d821a5bcae48d9de21c9e12272e49e02f509cb74
 
-COCOAPODS: 0.35.0
+COCOAPODS: 0.39.0
