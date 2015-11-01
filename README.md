@@ -102,7 +102,7 @@ You could install this library via CocoaPods
 
     pod 'ObjCJSONLikeDescription'
 
-or dragging files in `AspectFiles/` into your project manually.
+or dragging files in `ObjCJSONLikeDescription/` into your project manually.
 
 **NOTE: This source is an aspect patch using [XAspect][]. You should also include this library in your project too.**
 
