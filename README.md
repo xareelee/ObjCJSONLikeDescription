@@ -100,7 +100,7 @@ Installation
 ------------
 You could install this library via CocoaPods
 
-    pod 'XAspect-Foundation_UnicodifyingDescriptionsOfObjects'
+    pod 'ObjCJSONLikeDescription'
 
 or dragging files in `AspectFiles/` into your project manually.
 
@@ -112,9 +112,30 @@ Support other classes with subspec
 
 #### [M13OrderedDictionary](https://github.com/Marxon13/M13OrderedDictionary) 
 
-    pod 'XAspect-Foundation_UnicodifyingDescriptionsOfObjects/M13OrderedDictionary'
+    pod 'ObjCJSONLikeDescription/M13OrderedDictionary'
+
+
+About
+-----
+
+### Author
+
+Xaree Lee (李岡諭, Kang-Yu Lee), an iOS developer from Taiwan.
+
+* <xareelee@gmail.com>
+
+
+### License
+
+This library is released under the MIT license. See the LICENSE file for more info.
+
+
+
 
 
 <!--Links-->
 [XAspect]: https://github.com/xareelee/XAspect
 [XAspectPatches]: https://github.com/xareelee/XAspectPatches
+
+
+
