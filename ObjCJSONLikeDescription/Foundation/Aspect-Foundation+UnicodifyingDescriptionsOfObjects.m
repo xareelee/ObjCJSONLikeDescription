@@ -55,7 +55,7 @@
  */
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wobjc-protocol-method-implementation"
-@implementation NSDictionary(DebugDescription)
+@implementation NSDictionary(RedirectDebugDescription)
 - (NSString *)debugDescription
 {
   return [self description];
@@ -74,6 +74,10 @@
 {
   return [self description];
 }
+- (NSString *)description
+{
+  return [self descriptionWithLocale:[NSLocale systemLocale]];
+}
 @end
 
 @implementation NSOrderedSet(DebugDescription)
@@ -87,7 +91,7 @@
 
 // =============================================================================
 // Start aspect-oriented programming
-#define AtAspect Foundation_UnicodifyingDescriptionsOfObjects
+#define AtAspect ObjCJSONLikeDescription
 // =============================================================================
 
 #define AtAspectOfClass NSDictionary

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'ObjCJSONLikeDescription'
-  s.version      = '1.3.0'
+  s.version      = '1.3.1'
   s.license      = 'MIT'
   s.summary      = 'JSON-like and unicodify descriptions of Objective-C collection objects'
   s.homepage     = 'https://github.com/xareelee/ObjCJSONLikeDescription'

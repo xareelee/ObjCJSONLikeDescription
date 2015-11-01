@@ -6,9 +6,8 @@
 //  Copyright © 2015 Xaree Lee. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 #import <XCTest/XCTest.h>
-#import <XAspect/XAspect.h>
 
 @interface ObjCJSONLikeDescriptionDevTests : XCTestCase
 
@@ -28,10 +27,8 @@
   
   NSString *descriptionOfArray = @"[\n\t\"如果你不愛我\",\n\t\"我會讓你走\",\n\t\"如果你真心愛我\",\n\t\"我會讓你擁有全世界\",\n\t{\n\t\t\"真的嗎？\": \"真的\"\n\t}\n]" ;
   
-  // Foundation_UnicodifyingDescriptionsOfObjects should generate duplicated
-  // aspect patches for the same target
   XCTAssert([[array description] isEqualToString:descriptionOfArray],
-            @"The string should be equal via aspect 'Foundation_UnicodifyingDescriptionsOfObjects'.");
+            @"The description from ObjCJSONLikeDescription should be a JSON-like format.");
 }
 
 @end

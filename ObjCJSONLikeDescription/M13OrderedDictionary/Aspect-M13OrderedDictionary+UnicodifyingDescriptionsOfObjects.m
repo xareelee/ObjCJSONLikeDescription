@@ -42,7 +42,7 @@
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wobjc-protocol-method-implementation"
-@implementation M13OrderedDictionary (Foundation_UnicodifyingDescriptionsOfObjects)
+@implementation M13OrderedDictionary (ObjCJSONLikeDescription)
 
 - (NSString *)debugDescription
 {
@@ -56,7 +56,7 @@
 
 // =============================================================================
 // Start aspect-oriented programming
-#define AtAspect Foundation_UnicodifyingDescriptionsOfObjects
+#define AtAspect ObjCJSONLikeDescription
 // =============================================================================
 
 #define AtAspectOfClass M13OrderedDictionary
