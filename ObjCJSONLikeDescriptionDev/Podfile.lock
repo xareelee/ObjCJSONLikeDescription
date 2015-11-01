@@ -1,0 +1,37 @@
+PODS:
+  - M13OrderedDictionary (1.1.0)
+  - ObjCJSONLikeDescription/All (1.3.0):
+    - ObjCJSONLikeDescription/Core
+    - ObjCJSONLikeDescription/Foundation
+    - ObjCJSONLikeDescription/M13OrderedDictionary
+  - ObjCJSONLikeDescription/Core (1.3.0)
+  - ObjCJSONLikeDescription/Foundation (1.3.0):
+    - ObjCJSONLikeDescription/Core
+    - XAspect
+  - ObjCJSONLikeDescription/M13OrderedDictionary (1.3.0):
+    - M13OrderedDictionary
+    - ObjCJSONLikeDescription/Core
+    - XAspect
+  - XAspect (1.0.5):
+    - XAspect/Core (= 1.0.5)
+    - XAspect/Macros (= 1.0.5)
+  - XAspect/Core (1.0.5):
+    - XAspect/Macros
+  - XAspect/Macros (1.0.5)
+  - XLTestLog (1.0.1)
+
+DEPENDENCIES:
+  - ObjCJSONLikeDescription/All (from `./../`)
+  - XLTestLog (~> 1.0)
+
+EXTERNAL SOURCES:
+  ObjCJSONLikeDescription:
+    :path: "./../"
+
+SPEC CHECKSUMS:
+  M13OrderedDictionary: 6e157fe9c82aa6b3cd7198f5c5c30c7a6834c4a6
+  ObjCJSONLikeDescription: b8ac14fdbafbcbbc48149fc4d34d7c12fce4e009
+  XAspect: db50bf487f92dbb8557a7a5365556966c8493af8
+  XLTestLog: d821a5bcae48d9de21c9e12272e49e02f509cb74
+
+COCOAPODS: 0.39.0

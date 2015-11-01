@@ -1,5 +1,0 @@
-#import <Foundation/Foundation.h>
-@interface PodsDummy_XAspect_Foundation_UnicodifyingDescriptionsOfObjects : NSObject
-@end
-@implementation PodsDummy_XAspect_Foundation_UnicodifyingDescriptionsOfObjects
-@end

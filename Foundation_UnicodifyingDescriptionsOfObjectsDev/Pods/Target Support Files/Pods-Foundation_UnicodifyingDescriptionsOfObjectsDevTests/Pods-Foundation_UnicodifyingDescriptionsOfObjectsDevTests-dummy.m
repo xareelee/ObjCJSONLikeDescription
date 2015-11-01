@@ -1,5 +1,0 @@
-#import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_Foundation_UnicodifyingDescriptionsOfObjectsDevTests : NSObject
-@end
-@implementation PodsDummy_Pods_Foundation_UnicodifyingDescriptionsOfObjectsDevTests
-@end

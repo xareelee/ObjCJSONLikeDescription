@@ -1,0 +1,6 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited)  "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/M13OrderedDictionary" "${PODS_ROOT}/Headers/Public/ObjCJSONLikeDescription" "${PODS_ROOT}/Headers/Public/XAspect" "${PODS_ROOT}/Headers/Public/XLTestLog"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/M13OrderedDictionary" -isystem "${PODS_ROOT}/Headers/Public/ObjCJSONLikeDescription" -isystem "${PODS_ROOT}/Headers/Public/XAspect" -isystem "${PODS_ROOT}/Headers/Public/XLTestLog"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"M13OrderedDictionary" -l"ObjCJSONLikeDescription" -l"XAspect" -l"XLTestLog" -l"c++" -framework "Foundation" -framework "XCTest"
+PODS_ROOT = ${SRCROOT}/Pods
