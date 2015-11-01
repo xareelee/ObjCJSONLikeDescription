@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name         = 'XAspect-Foundation_UnicodifyingDescriptionsOfObjects'
-  s.version      = '1.1.0'
+  s.version      = '1.2.0'
   s.license      = 'MIT'
   s.summary      = 'Unicodify descriptions of objects in Foundation framework'
-  s.homepage     = 'https://github.com/xareelee/Foundation_UnicodifyingDescriptionsOfObjects'
+  s.homepage     = 'https://github.com/xareelee/ObjCJSONLikeDescription'
   s.authors      = { 'Kang-Yu Xaree Lee' => 'xareelee@gmail.com' }
-  s.source       = { :git => "https://github.com/xareelee/Foundation_UnicodifyingDescriptionsOfObjects.git", :tag => s.version.to_s, :submodules =>  true }
+  s.source       = { :git => "https://github.com/xareelee/ObjCJSONLikeDescription.git", :tag => s.version.to_s, :submodules =>  true }
   
   s.requires_arc = true  
 

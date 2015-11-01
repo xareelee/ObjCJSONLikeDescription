@@ -34,10 +34,16 @@
 
 #import <Foundation/Foundation.h>
 
+#define XL_OVERLOADABLE __attribute__((overloadable))
 
-NSString *xl_descrtionForKey(id obj);
-NSString *xl_descrtionForValue(id obj, id locale, NSUInteger level);
+#pragma mark Overloadable description functions
+XL_OVERLOADABLE NSString *xl_descrtionForObject(id obj) ;
+XL_OVERLOADABLE NSString *xl_descrtionForObject(id obj, id locale);
+XL_OVERLOADABLE NSString *xl_descrtionForObject(id obj, id locale, NSUInteger level);
+
+#pragma mark Customizable collection description
 NSString *xl_collectionDescription(id collection, NSString *openCollection, NSString *closeCollection, NSString *separator, NSUInteger level, NSString *(^elementDescriptionMapper)(id collection, id element, NSUInteger elementLevel));
 
+#pragma mark JSON-like description for collection
 NSString *xl_JSON_array_description(id collection, id locale, NSUInteger level);
 NSString *xl_JSON_object_description(id collection, id locale, NSUInteger level);

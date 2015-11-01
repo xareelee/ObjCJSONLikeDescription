@@ -46,6 +46,8 @@
 # define INDT @"\t"
 #endif
 
+#define stringify_desc(DESCRIPTION) [NSString stringWithFormat:@"\"%@\"", DESCRIPTION]
+
 
 // -----------------------------------------------------------------------------
 // Interface
@@ -89,32 +91,44 @@ static NSString *_indentationForLevels(NSUInteger level)
   }
 }
 
-NSString *xl_descrtionForKey(id obj)
+
+NS_INLINE NSString *xl_JSON_value(id obj)
 {
-  if ([obj isKindOfClass:[NSString class]]) {
-    return [NSString stringWithFormat:@"\"%@\"", obj];
-  } else if ([obj isKindOfClass:NSClassFromString(@"__NSCFBoolean")]) {
+  if ([obj isKindOfClass:NSClassFromString(@"__NSCFBoolean")]) {
     return ([obj boolValue]) ? @"true" : @"false";
   } else if ([obj isKindOfClass:[NSNumber class]]) {
     return [obj description];
   } else if ([obj isKindOfClass:[NSNull class]]) {
     return @"null";
   }
-  return [NSString stringWithFormat:@"<%@: %p>", NSStringFromClass([obj class]), obj];
+  return nil;
 }
 
-NSString *xl_descrtionForValue(id obj, id locale, NSUInteger level)
+XL_OVERLOADABLE NSString *xl_descrtionForObject(id obj)
 {
-  if ([obj isKindOfClass:[NSString class]]) {
-    return [NSString stringWithFormat:@"\"%@\"", obj];
-  } else if ([obj respondsToSelector:@selector(xl_descriptionWithLocale:indent:)]) {
+  return xl_JSON_value(obj) ?: stringify_desc([obj description]);
+}
+
+XL_OVERLOADABLE NSString *xl_descrtionForObject(id obj, id locale)
+{
+  if ([obj respondsToSelector:@selector(xl_descriptionWithLocale:indent:)]) {
+    return [obj xl_descriptionWithLocale:locale indent:0];
+  } else if ([obj respondsToSelector:@selector(descriptionWithLocale:indent:)]) {
+    return [obj descriptionWithLocale:locale indent:0];
+  }
+  return xl_JSON_value(obj) ?: stringify_desc([obj descriptionWithLocale:locale]);
+}
+
+XL_OVERLOADABLE NSString *xl_descrtionForObject(id obj, id locale, NSUInteger level)
+{
+  if ([obj respondsToSelector:@selector(xl_descriptionWithLocale:indent:)]) {
     return [obj xl_descriptionWithLocale:locale indent:level];
   } else if ([obj respondsToSelector:@selector(descriptionWithLocale:indent:)]) {
     return [obj descriptionWithLocale:locale indent:level];
-  } else if ([obj isKindOfClass:[NSNull class]]) {
-    return @"null"; // JSON null value
+  } else if ([obj respondsToSelector:@selector(descriptionWithLocale:)]) {
+    return xl_descrtionForObject(obj, locale);
   }
-  return [obj description];
+  return xl_descrtionForObject(obj);
 }
 
 NSString *xl_collectionDescription(id collection, NSString *openCollection, NSString *closeCollection, NSString *separator, NSUInteger level, NSString *(^elementDescriptionMapper)(id collection, id element, NSUInteger elementLevel))
@@ -138,7 +152,7 @@ NSString *xl_JSON_array_description(id collection, id locale, NSUInteger level)
 {
   NSCAssert([collection conformsToProtocol:@protocol(NSFastEnumeration)], @"Class `%@` should conform to protocol NSFastEnumeration for a list collection.", NSStringFromClass([collection class]));
   return xl_collectionDescription(collection, @"[", @"]", @",", level, ^NSString *(NSArray *array, NSString *element, NSUInteger elementLevel) {
-    return xl_descrtionForValue(element, locale, elementLevel);
+    return xl_descrtionForObject(element, locale, elementLevel);
   });
 }
 
@@ -147,7 +161,7 @@ NSString *xl_JSON_object_description(id collection, id locale, NSUInteger level)
   NSCAssert([collection conformsToProtocol:@protocol(NSFastEnumeration)], @"Class `%@` should conform to protocol NSFastEnumeration for a list collection.", NSStringFromClass([collection class]));
   NSCAssert([collection respondsToSelector:@selector(objectForKeyedSubscript:)], @"Class `%@` should implement `-objectForKeyedSubscript:` for a key-value collection.", NSStringFromClass([collection class]));
   return xl_collectionDescription(collection, @"{", @"}", @",", level, ^NSString *(id dict, NSString *element, NSUInteger elementLevel) {
-    return [NSString stringWithFormat:@"%@ : %@", xl_descrtionForKey(element), xl_descrtionForValue(dict[element], locale, elementLevel)];
+    return [NSString stringWithFormat:@"%@: %@", xl_descrtionForObject(element), xl_descrtionForObject(dict[element], locale, elementLevel)];
   });
 }
 
